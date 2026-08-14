@@ -27,3 +27,7 @@ test('multiply 4 * 5 to equal 20', () => {
 test('multiply 8 * 8 to equal 64', () => {
   expect(calculator.multiply(8, 8)).toBe(64);
 });
+//Me di cuenta que esa funcion da error porque espera que reciba 0, pero js manda "Infinity" y para corregirlo modifique la funcion divide en "calculator.js"
+test('divide 10 / 0 should return 0', () => {
+  expect(calculator.divide(10, 0)).toBe(0);
+});

@@ -4,8 +4,11 @@ const add = function(a, b) {
 const subtract = function(a, b) {
   return a - b;
 }
-
-function divide(a, b){
+// Tuve que hacer un if para validar que si se trata de dividir algun numero entre 0, que la funcion mande el valor de 0 para que la prueba pase y no mande "Infinity".
+function divide(a, b) {
+  if (b === 0) {
+    return 0;
+  }
   return a / b;
 }
 
